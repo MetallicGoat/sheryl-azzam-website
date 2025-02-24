@@ -48,11 +48,6 @@ body {
 
 @layer base {
   .animated-text-color {
-    /*
-        From the Mars weather app project
-        TODO change this to be shades of green maybe
-     */
-
     color: white;
     background: repeating-linear-gradient(
             45deg,
