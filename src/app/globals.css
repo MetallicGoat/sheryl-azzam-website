@@ -33,35 +33,42 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
 
+/*html, body {*/
+/*  overflow: hidden;*/
+/*  height: 100%;*/
+/*}*/
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+
+  overscroll-behavior: none;
 }
 
 @layer base {
   .animated-text-color {
     color: white;
     background: repeating-linear-gradient(
-            45deg,
-            #00f1fb 0%,
-            #0042ff 5%,
-            #00f1fb 10%,
-            #0042ff 15%,
-            #00f1fb 20%,
-            #0042ff 25%,
-            #00f1fb  30%,
-            #0042ff 35%,
-            #00f1fb  40%,
-            #0042ff 45%,
-            #00f1fb  50%
+        45deg,
+        #00f1fb 0%,
+        #0042ff 5%,
+        #00f1fb 10%,
+        #0042ff 15%,
+        #00f1fb 20%,
+        #0042ff 25%,
+        #00f1fb 30%,
+        #0042ff 35%,
+        #00f1fb 40%,
+        #0042ff 45%,
+        #00f1fb 50%
     );
     background-size: 600vw 600vw;
     -webkit-text-fill-color: transparent;
