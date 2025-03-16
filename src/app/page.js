@@ -4,16 +4,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-        <Image
-          src="/background.jpg"
-          alt="Background"
-          className="w-full h-full fixed bg-cover z-0 opacity-20"
-          objectFit="cover"
-          width={7000}
-          height={4667}
-          priority
-        />
-
         <div className="absolute min-h-screen w-full flex justify-center md:items-center">
           {/*<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">*/}
           {/*  <path id="black"*/}
@@ -24,7 +14,7 @@ export default function Home() {
           <Image
             src="/cardinal.svg"
             alt="Cardinal Background"
-            className="fixed opacity-40 md:left-0  md:pt-0 w-4/5 md:w-3/5 h-auto"
+            className="fixed opacity-40 md:left-0 pt-26 sm:pt-10 md:pt-0 w-4/5 md:w-3/5 h-auto"
             width={0}
             height={0}
             priority

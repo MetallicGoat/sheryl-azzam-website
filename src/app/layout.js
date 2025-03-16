@@ -1,5 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,13 +17,25 @@ export const metadata = {
   description: "This website was built in memory of Sheryl Azzam",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Image
+          src="/background.jpg"
+          alt="Background"
+          className="w-full h-full fixed bg-cover z-0 opacity-20"
+          objectFit="cover"
+          width={7000}
+          height={4667}
+          priority
+        />
+
+        <div className="w-full absolute z-20">{children}</div>
+
+
       </body>
     </html>
   );
