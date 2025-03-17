@@ -23,13 +23,14 @@ export default function Page() {
         <p>Family favorite photos</p>
       </section>
 
-
-      <RowsPhotoAlbum
-        photos={photos}
-        targetRowHeight={300}
-        padding={0}
-        onClick={({ index }) => setIndex(index)}
-      />
+      <div className="px-8 md:px-10 xl:px-20 pt-10">
+        <RowsPhotoAlbum
+          photos={photos}
+          targetRowHeight={300}
+          padding={0}
+          onClick={({ index }) => setIndex(index)}
+        />
+      </div>
 
       <Lightbox
         slides={photos}

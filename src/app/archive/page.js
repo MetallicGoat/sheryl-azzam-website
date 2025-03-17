@@ -26,13 +26,14 @@ export default function Page() {
     <div>
       <section className="text-center pt-20">
         <h1 className="text-4xl">Archive</h1>
-        <p>This page contains a collection of work produced by Sheryl Azzam</p>
-
+        <p>This page contains a collection of works, art, and recipes created by Sheryl Azzam</p>
       </section>
 
       {/* Writing Section */}
       <section className="mx-5 sm:mx-10 md:mx-20 mt-10">
         <h1 className="text-3xl">Writing</h1>
+        <p className="pb-5">Along with <a href="">Red Flags and Butterflies</a>, Sheryl had many other creative
+        writing pieces. Unfortunately many did not get published, but they live on here instead</p>
         <ArchiveTable files={writingFiles}/>
       </section>
 
@@ -65,7 +66,7 @@ const ArchiveTable = ({files}) => {
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition inline-block"
+                className="bg-red-700 px-4 py-2 rounded-md hover:bg-red-600 transition inline-block"
               >
                 Download
               </a>

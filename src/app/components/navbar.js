@@ -1,0 +1,40 @@
+"use client";
+
+import Link from "next/link";
+import {usePathname} from "next/navigation";
+
+const navigation = [
+  {name: 'Home', href: '/'},
+  {name: 'Gallery', href: '/gallery'},
+  {name: 'Archive', href: '/archive'},
+]
+
+export default function Navbar() {
+  const pathname = usePathname();
+
+  return (
+    <div className="absolute mt-5 mx-5">
+      <nav>
+        {
+          navigation.map((item) => {
+            const isActive = pathname === item.href;
+
+            let styles = "text-xl p-5 pt-20 m-3 rounded-2xl transition "
+
+            if (isActive) {
+              styles += "bg-red-700"
+            } else {
+              styles += "hover:text-red-700"
+            }
+
+            return (
+              <Link key={item.name} href={item.href} className={styles}>
+                {item.name}
+              </Link>
+            );
+          })
+        }
+      </nav>
+    </div>
+  );
+}
