@@ -25,7 +25,7 @@ export default function Page() {
   return (
     <div>
       <section className="text-center pt-20">
-        <h1 className="text-4xl"> Archive</h1>
+        <h1 className="text-4xl">Archive</h1>
         <p>This page contains a collection of work produced by Sheryl Azzam</p>
 
       </section>
