@@ -28,8 +28,7 @@ export default function RootLayout({children}) {
     <Image
       src="/background.jpg"
       alt="Background"
-      className="w-full h-full fixed bg-cover z-0 opacity-20"
-      objectFit="cover"
+      className="w-full h-full fixed bg-cover z-0 opacity-20 object-cover"
       width={7000}
       height={4667}
       priority
@@ -41,7 +40,7 @@ export default function RootLayout({children}) {
       {/* PAGE CONTENT */}
       {children}
 
-      <footer>
+      <footer className="pt-20">
         <p className="text-lg text-center m-8">
           Made with ❤ by the Azzam family
         </p>

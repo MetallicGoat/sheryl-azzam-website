@@ -13,8 +13,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="absolute mt-5 mx-5">
-      <nav>
+    <div className="absolute mt-5 w-full flex md:w-auto md:mx-5 md:inline">
+      <div className="mx-auto md:mx-0">
         {
           navigation.map((item) => {
             const isActive = pathname === item.href;
@@ -34,7 +34,7 @@ export default function Navbar() {
             );
           })
         }
-      </nav>
+      </div>
     </div>
   );
 }

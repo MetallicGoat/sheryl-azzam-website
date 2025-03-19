@@ -50,7 +50,7 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 
-  overscroll-behavior: none;
+  /*overscroll-behavior: none;*/
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -62,38 +62,40 @@ body {
 html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
+  /*overscroll-behavior: none;*/
 }
 
-@layer base {
-  .animated-text-color {
-    color: white;
-    background: repeating-linear-gradient(
-        45deg,
-        #00f1fb 0%,
-        #0042ff 5%,
-        #00f1fb 10%,
-        #0042ff 15%,
-        #00f1fb 20%,
-        #0042ff 25%,
-        #00f1fb 30%,
-        #0042ff 35%,
-        #00f1fb 40%,
-        #0042ff 45%,
-        #00f1fb 50%
-    );
-    background-size: 600vw 600vw;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+/*@layer base {*/
+/*  .animated-text-color {*/
+/*    color: white;*/
+/*    background: repeating-linear-gradient(*/
+/*        45deg,*/
+/*        #00f1fb 0%,*/
+/*        #0042ff 5%,*/
+/*        #00f1fb 10%,*/
+/*        #0042ff 15%,*/
+/*        #00f1fb 20%,*/
+/*        #0042ff 25%,*/
+/*        #00f1fb 30%,*/
+/*        #0042ff 35%,*/
+/*        #00f1fb 40%,*/
+/*        #0042ff 45%,*/
+/*        #00f1fb 50%*/
+/*    );*/
+/*    background-size: 600vw 600vw;*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    -webkit-background-clip: text;*/
 
-    animation: slide 10s linear infinite forwards;
-  }
+/*    animation: slide 10s linear infinite forwards;*/
+/*  }*/
 
-  @keyframes slide {
-    0% {
-      background-position-x: 0;
-    }
-    100% {
-      background-position-x: 600vw;
-    }
-  }
-}
+/*  @keyframes slide {*/
+/*    0% {*/
+/*      background-position-x: 0;*/
+/*    }*/
+/*    100% {*/
+/*      background-position-x: 600vw;*/
+/*    }*/
+/*  }*/
+/*}*/

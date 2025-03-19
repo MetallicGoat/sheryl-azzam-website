@@ -36,8 +36,6 @@ export default function Page() {
         writing pieces. Unfortunately many did not get published, but they live on here instead</p>
         <ArchiveTable files={writingFiles}/>
       </section>
-
-
     </div>
   )
 }
