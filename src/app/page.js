@@ -88,14 +88,19 @@ export default function Home() {
               </h3>
 
               <p className="sm:text-xl xl:text-2xl text-gray-800 mx-auto max-w-md md:max-w-full md:mx-0 ">
-
-                Sheryl started her work on Red Flags and Butterflies in 2019.
-                A medical and scientific writer by profession, she completed her first novel
-                shortly before her passing, aiming to help young readers recognize when those
-                meant to love them do not always have their best interests at heart.
-                Above all, she cherished her family—her husband, three sons, and their two beloved dogs.
-                Her legacy of love, strength, and compassion continues to inspire all who knew her.
+                Sheryl started her work on Red Flags and Butterflies in 2019. The story follows a
+                teenage girl, Lexie, who is slowly comes to the realization that not all the people
+                around her she loves do not have her best interests in mid. Sheryl hoped that one
+                day the book would help young girls in a similar situation to Lexie&#39;s understand
+                what abusive is, and what forms it can take.
               </p>
+
+              <div className="pt-5 flex justify-center items-center">
+                <a target="_blank" href="https://redflagsandbutterflies.com" className="text-2xl font-bold p-4 bg-red-700 hover:bg-red-600 rounded-2xl">
+                  More Information
+                </a>
+              </div>
+
             </div>
           </div>
         </section>
@@ -103,9 +108,3 @@ export default function Home() {
     </div>
   );
 }
-
-// function Test(text) {
-//   return (
-//     <h1>{text}</h1>
-//   )
-// }

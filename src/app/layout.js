@@ -28,7 +28,7 @@ export default function RootLayout({children}) {
     <Image
       src="/background.jpg"
       alt="Background"
-      className="w-full h-full fixed bg-cover z-0 opacity-20 object-cover"
+      className="w-full h-full fixed bg-cover z-0 opacity-30 object-cover"
       width={7000}
       height={4667}
       priority
