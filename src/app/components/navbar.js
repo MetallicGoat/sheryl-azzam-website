@@ -13,13 +13,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="absolute mt-5 w-full flex md:w-auto md:mx-5 md:inline">
+    <div className="absolute mt-2 md:mt-5 w-full flex md:w-auto md:mx-5 md:inline">
       <div className="mx-auto md:mx-0">
         {
           navigation.map((item) => {
             const isActive = pathname === item.href;
 
-            let styles = "text-xl p-5 pt-20 m-3 rounded-2xl transition "
+            let styles = "text-lg md:text-xl px-2 pb-2 md:px-5 md:pb-5 pt-20 m-3 rounded-2xl transition "
 
             if (isActive) {
               styles += "bg-red-700"

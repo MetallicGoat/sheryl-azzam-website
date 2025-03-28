@@ -1,19 +1,11 @@
 import Image from "next/image";
-
+import { motion } from "motion/react"
+import Cardinal from "@/app/cardinal";
 
 export default function Home() {
   return (
     <div>
-      <div className="absolute min-h-screen w-full flex justify-center md:items-center -z-50">
-        <Image
-          src="/home/Cardinal.svg"
-          alt="Cardinal Background"
-          className="fixed opacity-40 md:left-0 pt-26 sm:pt-10 md:pt-0 w-4/5 md:w-3/5 h-auto"
-          width={0}
-          height={0}
-          priority
-        />
-      </div>
+      <Cardinal/>
 
       <main className="px-8 md:px-10 xl:px-20">
 
@@ -45,7 +37,7 @@ export default function Home() {
             </div>
 
             <div
-              className="flex justify-center md:justify-end mx-auto md:mx-0 relative pt-2 w-9/10 sm:w-3/4 md:w-1/2"
+              className="flex justify-center md:justify-end mx-auto md:mx-0 relative pt-2 w-9/10 sm:w-3/5 md:w-1/2"
             >
               {/*shadow-gray-300 dark:shadow-gray-950*/}
               <Image
@@ -68,11 +60,12 @@ export default function Home() {
               <Image
                 src="/home/RFB_Cover.jpg"
                 alt="Red Flags and Butterfiles Cover Page"
-                className="w-3/4 rounded-3xl mx-auto shadow-xl"
+                className="w-4/5 xl:w-3/4 rounded-3xl mx-auto shadow-xl"
                 width={1613}
                 height={2400}
                 priority
               />
+
             </div>
 
             <div className="text-center md:w-3/5 md:text-left py-2 md:pb-0">
@@ -95,13 +88,34 @@ export default function Home() {
                 what abusive is, and what forms it can take.
               </p>
 
-              <div className="pt-5 flex justify-center items-center">
-                <a target="_blank" href="https://redflagsandbutterflies.com" className="text-2xl font-bold p-4 bg-red-700 hover:bg-red-600 rounded-2xl">
+              <div className="pt-5 hidden md:flex justify-center items-center">
+                {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
+                <a target="_blank" href="https://redflagsandbutterflies.com" className="text-lg lg:text-2xl p-2 lg:p-4 font-bold bg-gradient-to-b from-red-600 to-red-700 hover:from-red-700 hover:to-red-800  transition duration-100 rounded-2xl">
                   More Information
                 </a>
               </div>
-
             </div>
+          </div>
+
+          <div className="pt-10 flex justify-center items-center md:hidden">
+            {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
+            <a target="_blank" href="https://redflagsandbutterflies.com" className="text-lg p-2 font-bold bg-gradient-to-br from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transition duration-100 rounded-2xl">
+              More Information
+            </a>
+          </div>
+        </section>
+
+        {/* QUOTE */}
+        <section>
+          <div className="py-40 md:px-10">
+            <q className="text-4xl xs:text-5xl sm:text-6xl xl:text-7xl font-birthstone">
+              Take pleasure in the ordinary. Enjoy your morning coffee,
+              the fresh air, the fall colors, the quiet coziness of home,
+              the days.... all the little things that make life great.
+            </q>
+
+            {/*Font size one size bigger than above*/}
+            <p className="pt-6 text-5xl xs:text-6xl sm:text-7xl xl:text-8xl font-birthstone text-right">- Sheryl Azzam</p>
           </div>
         </section>
       </main>

@@ -1,4 +1,4 @@
-import {Geist, Geist_Mono} from "next/font/google";
+import {Geist, Geist_Mono, Birthstone} from "next/font/google";
 import "./globals.css";
 import Image from "next/image"
 import Navbar from "@/app/components/navbar";
@@ -13,6 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const birthstone = Birthstone({
+  variable: "--font-birthstone",
+  subsets: ["latin"],
+  weight: "400"
+});
+
 export const metadata = {
   title: "Sheryl Azzam",
   description: "This website was built in memory of Sheryl Azzam",
@@ -23,7 +29,7 @@ export default function RootLayout({children}) {
   return (
     <html lang="en">
 
-    <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <body className={`${geistSans.variable} ${geistMono.variable} ${birthstone.variable} antialiased`}>
 
     <Image
       src="/background.jpg"
