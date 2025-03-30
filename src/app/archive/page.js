@@ -1,23 +1,21 @@
-import Image from "next/image";
-
 const writingFiles = [
   {
-    title: 'Document 1',
-    description: 'This is a sample document',
-    date: '2025-03-10',
-    downloadUrl: '/files/document1.pdf',
+    title: 'Bees Story',
+    description: 'Educational story about Honey Bees',
+    date: '2020-01-01',
+    downloadUrl: '/files/document.pdf',
   },
   {
-    title: 'Document 2',
-    description: 'This is a sample document',
-    date: '2025-01-15',
-    downloadUrl: '/files/document2.pdf',
+    title: 'Spiders Story',
+    description: 'Educational story about Spiders',
+    date: '2020-01-01',
+    downloadUrl: '/files/document.pdf',
   },
   {
-    title: 'Document 3',
-    description: 'This is a sample document',
-    date: '2025-03-01',
-    downloadUrl: '/files/document3.pdf',
+    title: 'Creative Writings',
+    description: 'More Creative Writings',
+    date: '2020-01-01',
+    downloadUrl: '/files/document.pdf',
   },
 ];
 
@@ -29,12 +27,37 @@ export default function Page() {
         <p>This page contains a collection of works, art, and recipes created by Sheryl Azzam</p>
       </section>
 
+      <h1 className="text-2xl bg-yellow-300/50 text-center py-5 my-8 font-bold">This page is still under construction!</h1>
+
       {/* Writing Section */}
       <section className="mx-5 sm:mx-10 md:mx-20 mt-10">
         <h1 className="text-3xl">Writing</h1>
-        <p className="pb-5">Along with <a href="">Red Flags and Butterflies</a>, Sheryl had many other creative
-        writing pieces. Unfortunately many did not get published, but they live on here instead</p>
+
+        <p className="pb-5">Along with <a href="https://www.redflagsandbutterflies.com">Red Flags and Butterflies</a>,
+          Sheryl had many other creative writing pieces. Unfortunately
+          many did not get published, but they live on here instead
+        </p>
+
         <ArchiveTable files={writingFiles}/>
+      </section>
+
+      {/* Artwork Section */}
+      <section className="mx-5 sm:mx-10 md:mx-20 mt-20">
+        <h1 className="text-3xl">Artwork</h1>
+
+        <p className="pb-5"> Here is a collection of Artwork Sheryl created when young. </p>
+
+        <h1 className="font-bold text-center text-xl"> TODO: Create gallery similar to Gallery Tab. </h1>
+      </section>
+
+
+      {/* Recipes */}
+      <section className="mx-5 sm:mx-10 md:mx-20 mt-20">
+        <h1 className="text-3xl">Recipes </h1>
+
+        <p className="pb-5"> Here is a collection of Artwork Sheryl created when young. </p>
+
+        <h1 className="font-bold text-center text-xl"> TODO: Possibly add photos of hand written recipes</h1>
       </section>
     </div>
   )

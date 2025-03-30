@@ -1,6 +1,7 @@
 "use client";
 
-import {ColumnsPhotoAlbum, RowsPhotoAlbum} from "react-photo-album";
+import Image from "next/image"
+import {RowsPhotoAlbum} from "react-photo-album";
 import {useState} from "react";
 import photos from "./photos";
 import Lightbox from "yet-another-react-lightbox";
@@ -26,6 +27,14 @@ export default function Page() {
       <div className="px-8 md:px-10 xl:px-20 pt-10">
         <RowsPhotoAlbum
           photos={photos}
+          render={{ image: renderNextImage }}
+          defaultContainerWidth={1200}
+          sizes={{
+            size: "1168px",
+            sizes: [
+              { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
+            ],
+          }}
           targetRowHeight={300}
           padding={0}
           onClick={({ index }) => setIndex(index)}
@@ -44,4 +53,31 @@ export default function Page() {
 
     </div>
   )
+}
+
+// Custom Image Render
+// See https://react-photo-album.com/examples/nextjs
+function renderNextImage(
+  { alt = "", title, sizes },
+  { photo, width, height })
+{
+  return (
+    <div
+      style={{
+        width: "100%",
+        position: "relative",
+        aspectRatio: `${width} / ${height}`,
+      }}
+    >
+      <Image
+        fill
+        className="rounded-lg shadow-xl"
+        src={photo}
+        alt={alt}
+        title={title}
+        sizes={sizes}
+        placeholder={"blurDataURL" in photo ? "blur" : undefined}
+      />
+    </div>
+  );
 }

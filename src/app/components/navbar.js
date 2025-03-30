@@ -19,7 +19,7 @@ export default function Navbar() {
           navigation.map((item) => {
             const isActive = pathname === item.href;
 
-            let styles = "text-lg md:text-xl px-2 pb-2 md:px-5 md:pb-5 pt-20 m-3 rounded-2xl transition "
+            let styles = "text-lg md:text-xl px-4 pb-2 md:px-5 md:pb-5 pt-20 m-3 rounded-2xl transition "
 
             if (isActive) {
               styles += "bg-red-700"

@@ -32,7 +32,7 @@ export default function RootLayout({children}) {
     <body className={`${geistSans.variable} ${geistMono.variable} ${birthstone.variable} antialiased`}>
 
     <Image
-      src="/background.jpg"
+      src="/Texture.jpg"
       alt="Background"
       className="w-full h-full fixed bg-cover z-0 opacity-30 object-cover"
       width={7000}
