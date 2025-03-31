@@ -19,13 +19,13 @@ export default function Home() {
               </h2>
 
               <h3
-                className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold py-2 text-gray-800"
+                className="text-xl lg:text-2xl xl:text-3xl font-bold py-2 text-gray-800"
               >
                 In Loving Memory, 1976 - 2024
               </h3>
 
               <p
-                className="sm:text-xl xl:text-2xl text-gray-800 mx-auto max-w-md md:max-w-full md:pr-10 md:mx-0 ">
+                className="text-md sm:text-xl xl:text-2xl text-gray-800 mx-auto max-w-md md:max-w-full md:pr-10 md:mx-0 ">
 
                 Sheryl Azzam (Née Edwards) lived and raised her family in Brantford, ON.
                 A medical and scientific writer by profession, she completed her first novel
@@ -82,10 +82,10 @@ export default function Home() {
 
               <p className="sm:text-xl xl:text-2xl text-gray-800 mx-auto max-w-md md:max-w-full md:mx-0 ">
                 Sheryl started her work on Red Flags and Butterflies in 2019. The story follows a
-                teenage girl, Lexie, who is slowly comes to the realization that not all the people
-                around her she loves do not have her best interests in mid. Sheryl hoped that one
-                day the book would help young girls in a similar situation to Lexie&#39;s understand
-                what abusive is, and what forms it can take.
+                teenage girl, Lexie. Throughout the story, Lexie slowly comes to the realization
+                that not all the people around she she loves have her best interests in mind. Sheryl hoped
+                that one day this book would help young girls in a similar situations to Lexie&#39;s understand
+                what abuse is, and what forms it can take.
               </p>
 
               <div className="pt-5 hidden md:flex justify-center items-center">
