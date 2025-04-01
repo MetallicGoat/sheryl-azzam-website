@@ -1,3 +1,5 @@
+import Recipes from "@/app/archive/recipes";
+
 const writingFiles = [
   {
     title: 'Bees Story',
@@ -57,7 +59,8 @@ export default function Page() {
 
         <p className="pb-5"> Here is a collection of Artwork Sheryl created when young. </p>
 
-        <h1 className="font-bold text-center text-xl"> TODO: Possibly add photos of hand written recipes</h1>
+        <Recipes/>
+
       </section>
     </div>
   )
