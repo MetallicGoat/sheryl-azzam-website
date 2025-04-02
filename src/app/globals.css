@@ -31,6 +31,8 @@
 */
 
 :root {
+  color-scheme: only light;
+
   --background: #ffffff;
   --foreground: #171717;
 }
