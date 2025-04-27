@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image"
 import {RowsPhotoAlbum} from "react-photo-album";
 import {useState} from "react";
 import photos from "./photos";
@@ -10,6 +9,7 @@ import {Fullscreen, Slideshow, Thumbnails, Zoom} from "yet-another-react-lightbo
 import "react-photo-album/rows.css";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import {renderNextImage} from "@/app/components/nextjsimagerenderer";
 
 
 export default function Page() {
@@ -53,31 +53,4 @@ export default function Page() {
 
     </div>
   )
-}
-
-// Custom Image Render
-// See https://react-photo-album.com/examples/nextjs
-function renderNextImage(
-  { alt = "", title, sizes },
-  { photo, width, height })
-{
-  return (
-    <div
-      style={{
-        width: "100%",
-        position: "relative",
-        aspectRatio: `${width} / ${height}`,
-      }}
-    >
-      <Image
-        fill
-        className="rounded-lg shadow-xl"
-        src={photo}
-        alt={alt}
-        title={title}
-        sizes={sizes}
-        placeholder={"blurDataURL" in photo ? "blur" : undefined}
-      />
-    </div>
-  );
 }
