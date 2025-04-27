@@ -35,9 +35,9 @@ export default function Page() {
       <section className="mx-5 sm:mx-10 md:mx-20 mt-10">
         <h1 className="text-3xl">Writing</h1>
 
-        <p className="pb-5">Along with <a href="https://www.redflagsandbutterflies.com">Red Flags and Butterflies</a>,
+        <p className="pb-5">Along with <a className="text-red-700" href="https://www.redflagsandbutterflies.com">Red Flags and Butterflies</a>,
           Sheryl had many other creative writing pieces. Unfortunately
-          many did not get published, but they live on here instead
+          many did not get published, but they live on here instead.
         </p>
 
         <ArchiveTable files={writingFiles}/>
@@ -55,9 +55,9 @@ export default function Page() {
 
       {/* Recipes */}
       <section className="mx-5 sm:mx-10 md:mx-20 mt-20">
-        <h1 className="text-3xl">Recipes </h1>
+        <h1 className="text-3xl">Recipe Book</h1>
 
-        <p className="pb-5"> Here is a collection of Artwork Sheryl created when young. </p>
+        <p className="pb-5"> Family favourite dishes Sheryl would make. </p>
 
         <Recipes/>
 
