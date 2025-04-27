@@ -5,35 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const recipes = [
   {
-    title: "Apple Cake with Caramel Sauce",
-    ingredients: {
-      cake: [
-        "1 cup sugar",
-        "2 eggs",
-        "1/4 cup butter (room temp)",
-        "1 cup flour",
-        "1 tsp cinnamon",
-        "1 tsp baking soda",
-        "1/4 tsp salt",
-        "2 cups peeled & chopped apples"
-      ],
-      sauce: [
-        "1/2 cup brown sugar",
-        "1/2 cup white sugar",
-        "1/2 cup 18% cream",
-        "1/4 cup butter"
-      ]
-    },
-    directions: [
-      "Preheat oven to 350°F. Grease 9\" sq baking pan.",
-      "Beat sugar, butter, eggs until light & fluffy.",
-      "Combine (separate bowl) flour, cinnamon, baking soda, salt.",
-      "Stir dry ingredients into wet. Add apples.",
-      "Pour into pan. Bake 30–40 min. Centre of cake should spring back when touched gently.",
-      "Sauce: Combine all sauce ingredients in a saucepan. Bring to boil, stir until thickened."
-    ]
-  },
-  {
     title: "Chicken Shawarma Rice",
     ingredients: {
       chicken: [
@@ -138,7 +109,62 @@ const recipes = [
       "Serve over rice.",
       "Garnish with green onion or cilantro."
     ]
-  }
+  },
+  {
+    title: "Banana Bread / Muffin",
+    ingredients: [
+      "1 1/2 cups flour",
+      "1 teaspoon baking powder",
+      "1 teaspoon baking soda",
+      "1/2 teaspoon salt",
+      "3 large bananas, mashed (or use shredded zucchini)",
+      "3/4 cup white sugar",
+      "1 egg",
+      "1/3 cup butter, melted (NOT hot)",
+      "Optional: 1 cup chocolate chips"
+    ],
+    directions: [
+      "Preheat oven to 350°F. Grease pan.",
+      "Mix dry ingredients together in one bowl.",
+      "Mix wet ingredients together in another bowl.",
+      "Fold dry ingredients into wet ingredients.",
+      "If using, fold in chocolate chips (about 1 cup).",
+      "Spoon batter into 12 muffin cups.",
+      "Bake 22–28 minutes (depends on oven).",
+      "Tops should spring back lightly when touched.",
+      "Leave to cool."
+    ],
+    notes: "Makes 1 dozen muffins or 1 loaf."
+  },
+  {
+    title: "Apple Cake with Caramel Sauce",
+    ingredients: {
+      cake: [
+        "1 cup sugar",
+        "2 eggs",
+        "1/4 cup butter (room temp)",
+        "1 cup flour",
+        "1 tsp cinnamon",
+        "1 tsp baking soda",
+        "1/4 tsp salt",
+        "2 cups peeled & chopped apples"
+      ],
+      sauce: [
+        "1/2 cup brown sugar",
+        "1/2 cup white sugar",
+        "1/2 cup 18% cream",
+        "1/4 cup butter"
+      ]
+    },
+    directions: [
+      "Preheat oven to 350°F. Grease 9\" sq baking pan.",
+      "Beat sugar, butter, eggs until light & fluffy.",
+      "Combine (separate bowl) flour, cinnamon, baking soda, salt.",
+      "Stir dry ingredients into wet. Add apples.",
+      "Pour into pan. Bake 30–40 min. Centre of cake should spring back when touched gently.",
+      "Sauce: Combine all sauce ingredients in a saucepan. Bring to boil, stir until thickened."
+    ]
+  },
 ];
 
 
@@ -229,7 +255,7 @@ export default function Recipes() {
 
                   {/* Notes */}
                   {recipe.notes && (
-                    <div className="mt-4 p-4 bg-yellow-100/50 rounded-xl">
+                    <div className="mt-4 p-4 bg-yellow-100/35 rounded-xl">
                       <p className="italic">{recipe.notes}</p>
                     </div>
                   )}
