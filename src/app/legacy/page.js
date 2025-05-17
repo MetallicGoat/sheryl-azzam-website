@@ -25,7 +25,7 @@ const writingFiles = [
 export default function Page() {
   return (
     <div>
-      <section className="text-center pt-20">
+      <section className="text-center pt-24 sm:pt-20">
         <h1 className="text-4xl">Legacy</h1>
         <p>This page contains a collection of works, art, and recipes created by Sheryl Azzam</p>
       </section>
@@ -45,7 +45,7 @@ export default function Page() {
       {/*</section>*/}
 
       {/* Artwork Section */}
-      <section className="mx-5 sm:mx-10 md:mx-20 mt-20">
+      <section className="mx-5 sm:mx-10 md:mx-20 mt-10">
         <h1 className="text-3xl">Artwork</h1>
 
         <p className="pb-5"> A collection of drawings created by Sheryl as a teen. </p>

@@ -19,7 +19,7 @@ export default function Page() {
 
   return (
     <div>
-      <section className="text-center pt-20">
+      <section className="text-center pt-24 sm:pt-20">
         <h1 className="text-4xl">Gallery</h1>
         <p>Family favorite photos</p>
       </section>

@@ -87,10 +87,10 @@ export default function Home() {
                 what abuse is, and what forms it can take.
               </p>
 
-              <div className="pt-5 hidden md:flex justify-center items-center">
+              <div className="pt-15 hidden md:flex justify-center items-center">
                 {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
-                <a target="_blank" href="https://redflagsandbutterflies.com" className="text-lg lg:text-2xl p-2 lg:p-4 font-bold bg-gradient-to-b from-red-600 to-red-700 hover:from-red-700 hover:to-red-800  transition duration-100 rounded-2xl">
-                  More Information
+                <a target="_blank" href="https://redflagsandbutterflies.com" className="text-lg lg:text-2xl p-2 lg:p-4 font-bold bg-gradient-to-b from-red-600/50 to-red-700/60 hover:from-red-600/60 hover:to-red-700/70 transition duration-100 rounded-2xl">
+                  Learn More
                 </a>
               </div>
             </div>
@@ -98,8 +98,8 @@ export default function Home() {
 
           <div className="pt-10 flex justify-center items-center md:hidden">
             {/*MAKE SURE TO UPDATE OTHER BUTTON*/}
-            <a target="_blank" href="https://redflagsandbutterflies.com" className="text-lg p-2 font-bold bg-gradient-to-br from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transition duration-100 rounded-2xl">
-              More Information
+            <a target="_blank" href="https://redflagsandbutterflies.com" className="text-lg p-2 font-bold bg-gradient-to-br from-red-600/50 to-red-700/50 hover:from-red-600/60 hover:to-red-700/60 transition duration-100 rounded-2xl">
+              Learn More
             </a>
           </div>
         </section>
