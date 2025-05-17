@@ -82,7 +82,7 @@ export default function Home() {
               <p className="text-md sm:text-xl xl:text-2xl text-gray-800 mx-auto max-w-md md:max-w-full md:mx-0 ">
                 Sheryl started her work on Red Flags and Butterflies in 2019. The story follows a
                 teenage girl, Lexie. Throughout the story, Lexie slowly comes to the realization
-                that not all the people around she she loves have her best interests in mind. Sheryl hoped
+                that not all the people around she loves have her best interests in mind. Sheryl hoped
                 that one day this book would help young girls in a similar situations to Lexie&#39;s understand
                 what abuse is, and what forms it can take.
               </p>
