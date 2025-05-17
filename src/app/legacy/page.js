@@ -1,4 +1,5 @@
-import Recipes from "@/app/archive/recipes";
+import Recipes from "@/app/legacy/recipes";
+import Artwork from "@/app/legacy/artwork";
 
 const writingFiles = [
   {
@@ -25,31 +26,32 @@ export default function Page() {
   return (
     <div>
       <section className="text-center pt-20">
-        <h1 className="text-4xl">Archive</h1>
+        <h1 className="text-4xl">Legacy</h1>
         <p>This page contains a collection of works, art, and recipes created by Sheryl Azzam</p>
       </section>
 
-      <h1 className="text-2xl bg-yellow-300/50 text-center py-5 my-8 font-bold">This page is still under construction!</h1>
+      {/*<h1 className="text-2xl bg-yellow-300/50 text-center py-5 my-8 font-bold">This page is still under construction!</h1>*/}
 
-      {/* Writing Section */}
-      <section className="mx-5 sm:mx-10 md:mx-20 mt-10">
-        <h1 className="text-3xl">Writing</h1>
+      {/*/!* Writing Section *!/*/}
+      {/*<section className="mx-5 sm:mx-10 md:mx-20 mt-10">*/}
+      {/*  <h1 className="text-3xl">Writing</h1>*/}
 
-        <p className="pb-5">Along with <a className="text-red-700" href="https://www.redflagsandbutterflies.com">Red Flags and Butterflies</a>,
-          Sheryl had many other creative writing pieces. Unfortunately
-          many did not get published, but they live on here instead.
-        </p>
+      {/*  <p className="pb-5">Along with <a className="text-red-700" href="https://www.redflagsandbutterflies.com">Red Flags and Butterflies</a>,*/}
+      {/*    Sheryl had many other creative writing pieces. Unfortunately*/}
+      {/*    many did not get published, but they live on here instead.*/}
+      {/*  </p>*/}
 
-        <ArchiveTable files={writingFiles}/>
-      </section>
+      {/*  <ArchiveTable files={writingFiles}/>*/}
+      {/*</section>*/}
 
       {/* Artwork Section */}
       <section className="mx-5 sm:mx-10 md:mx-20 mt-20">
         <h1 className="text-3xl">Artwork</h1>
 
-        <p className="pb-5"> Here is a collection of Artwork Sheryl created when young. </p>
+        <p className="pb-5"> A collection of drawings created by Sheryl as a teen. </p>
 
-        <h1 className="font-bold text-center text-xl"> TODO: Create gallery similar to Gallery Tab. </h1>
+        <Artwork/>
+
       </section>
 
 

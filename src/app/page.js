@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { motion } from "motion/react"
 import Cardinal from "@/app/cardinal";
 
 export default function Home() {
