@@ -76,7 +76,7 @@ export default function Home() {
               <h3
                 className="text-xl lg:text-2xl xl:text-3xl font-bold py-2 text-gray-800"
               >
-                Coming October 18th 2025
+                Available as of October 18th 2025
               </h3>
 
               <p className="text-md sm:text-xl xl:text-2xl text-gray-800 mx-auto max-w-md md:max-w-full md:mx-0 ">
