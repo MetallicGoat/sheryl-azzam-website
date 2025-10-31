@@ -1,17 +1,14 @@
-import {Geist, Geist_Mono, Birthstone} from "next/font/google";
+import {Crimson_Pro, Birthstone} from "next/font/google";
 import "./globals.css";
 import Image from "next/image"
 import Navbar from "@/app/components/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const crimsonPro = Crimson_Pro({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-crimson-pro',
+  display: 'swap',
+})
 
 const birthstone = Birthstone({
   variable: "--font-birthstone",
@@ -27,9 +24,8 @@ export const metadata = {
 export default function RootLayout({children}) {
 
   return (
-    <html lang="en">
-
-    <body className={`${geistSans.variable} ${geistMono.variable} ${birthstone.variable} antialiased`}>
+    <html lang="en" className={crimsonPro.className}>
+    <body className="antialiased">
 
     <Image
       src="/Texture.jpg"

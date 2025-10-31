@@ -7,6 +7,13 @@
   --font-birthstone: "birthstone", cursive;
 }
 
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-crimson-pro), sans-serif;
+  --font-serif: var(--font-crimson-pro), serif;
+}
+
 /* NOTE: This commented code below was added by Tailwind v4 updater */
 
 /*
@@ -52,7 +59,6 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 
   /*overscroll-behavior: none;*/
 }
